@@ -1,0 +1,8 @@
+Don't repeat yourself
+#syntax - Yazım dili
+#INDENTATION - Girinti / Boşluk
+Code Snippet - Hazır Kodlar 
+
+CRUD Operations - Create, Read, Update, Delete
+
+Case sensitive
