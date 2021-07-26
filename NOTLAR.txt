@@ -6,3 +6,5 @@ Code Snippet - Hazır Kodlar
 CRUD Operations - Create, Read, Update, Delete
 
 Case sensitive
+
+Constructors - Yapıcı Blok
