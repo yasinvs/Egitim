@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TuzelMusteri.cs~RFfbc6605.TMP" />
+    <None Remove="TuzelMusteri.cs~RFfcf44e4.TMP" />
+  </ItemGroup>
+
+</Project>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Gun4.Odev5.MyDictionary
+﻿namespace Gun4.Odev5.MyDictionary
 {
     class MyDictionary<TKey, TValue>
     {
@@ -27,7 +21,7 @@ namespace Gun4.Odev5.MyDictionary
             dictionaryKey = new TKey[dictionaryKey.Length + 1];
             dictionaryValue = new TValue[dictionaryValue.Length + 1];
 
-            for(int i = 0; i < tempKey.Length; i++)
+            for (int i = 0; i < tempKey.Length; i++)
             {
                 dictionaryKey[i] = tempKey[i];
                 dictionaryValue[i] = tempValue[i];
