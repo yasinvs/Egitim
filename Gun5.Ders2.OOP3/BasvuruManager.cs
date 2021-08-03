@@ -8,10 +8,22 @@ namespace Gun5.Ders2.OOP3
 {
     class BasvuruManager
     {
-        public void BasvuruYap(IKrediManager krediManager)
+        public void BasvuruYap(IKrediManager krediManager, List<ILoggerService> loggerServices)
         {
-
+            // Başvuran bilgilerini değerlendirme
             krediManager.Hesapla();
+            foreach (var loggerService in loggerServices)
+            {
+                loggerService.Log();
+            }
+        }
+
+        public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
+        {
+            foreach (var kredi in krediler)
+            {
+                kredi.Hesapla();
+            }
         }
     }
 }
