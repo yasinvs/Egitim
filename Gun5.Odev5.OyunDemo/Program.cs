@@ -1,4 +1,4 @@
-﻿using Gun5.Odev5.OyunDemo.Adapters;
+using Gun5.Odev5.OyunDemo.Adapters;
 using Gun5.Odev5.OyunDemo.Classes;
 using Gun5.Odev5.OyunDemo.Entities;
 using System;

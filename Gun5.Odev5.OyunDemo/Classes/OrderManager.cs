@@ -9,6 +9,7 @@ namespace Gun5.Odev5.OyunDemo.Classes
         public void Order(Order order, Offer offer)
         {
             Console.WriteLine("{0} isimli satış yapıldı", order.ProductName);
+            Console.WriteLine("{0} isimli kampanya tanımlandı", offer.Name);
         }
     }
 }
