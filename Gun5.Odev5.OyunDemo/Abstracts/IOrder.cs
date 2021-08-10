@@ -4,6 +4,6 @@ namespace Gun5.Odev5.OyunDemo.Abstracts
 {
     interface IOrder
     {
-        void Order(Order order, Offer offer);
+        void Order(Person person, Order order, Offer offer);
     }
 }

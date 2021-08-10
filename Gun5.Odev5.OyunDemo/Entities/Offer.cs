@@ -3,5 +3,6 @@
     class Offer
     {
         public string Name { get; set; }
+        public long DiscountRate { get; set; }
     }
 }
