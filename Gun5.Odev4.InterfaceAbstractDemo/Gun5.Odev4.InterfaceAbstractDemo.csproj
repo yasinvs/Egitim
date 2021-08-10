@@ -6,10 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Classes\SalesManager.cs~RFcb25dc.TMP" />
-    <None Remove="Entities\Person.cs~RF1028c2b.TMP" />
-    <None Remove="Abstract\IOrder.cs~RFd38d88.TMP" />
-    <None Remove="IPersonCheckService.cs~RFb75c4e.TMP" />
+    <None Remove="Abstract\ICustomerCheckService.cs~RFaad8a2.TMP" />
+    <None Remove="Concrete\StarbucksCustomerManager.cs~RF5a19bc.TMP" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using Gun5.Odev5.OyunDemo.Entities;
 
-namespace Gun5.Odev5.OyunDemo.Abstracts
+namespace Gun5.Odev5.OyunDemo.Abstract
 {
     interface IPersonCheckService
     {

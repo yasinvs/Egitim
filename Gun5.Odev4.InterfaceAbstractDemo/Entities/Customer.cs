@@ -1,0 +1,14 @@
+﻿using Gun5.Odev4.InterfaceAbstractDemo.Abstract;
+using System;
+
+namespace Gun5.Odev4.InterfaceAbstractDemo.Entities
+{
+    public class Customer : IEntity
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string NationalityId { get; set; }
+    }
+}

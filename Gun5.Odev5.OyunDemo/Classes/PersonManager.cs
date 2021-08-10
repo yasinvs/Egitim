@@ -1,4 +1,4 @@
-﻿using Gun5.Odev5.OyunDemo.Abstracts;
+﻿using Gun5.Odev5.OyunDemo.Abstract;
 using Gun5.Odev5.OyunDemo.Entities;
 using System;
 

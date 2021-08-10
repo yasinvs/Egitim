@@ -1,7 +1,7 @@
 ﻿using Gun5.Odev5.OyunDemo.Entities;
 using System;
 using MernisServiceReference;
-using Gun5.Odev5.OyunDemo.Abstracts;
+using Gun5.Odev5.OyunDemo.Abstract;
 
 namespace Gun5.Odev5.OyunDemo.Adapters
 {
