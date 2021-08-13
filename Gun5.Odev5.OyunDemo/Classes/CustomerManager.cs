@@ -4,15 +4,15 @@ using System;
 
 namespace Gun5.Odev5.OyunDemo.Classes
 {
-    class PersonManager : IPersonService
+    class CustomerManager : ICustomerService
     {
-        private IPersonCheckService _personCheckService;
+        private ICustomerCheckService _personCheckService;
 
-        public PersonManager(IPersonCheckService personCheckService)
+        public CustomerManager(ICustomerCheckService personCheckService)
         {
             _personCheckService = personCheckService;
         }
-        public void SignUp(Person person)
+        public void SignUp(Customer person)
         {
             if (_personCheckService.Check(person))
             {

@@ -5,9 +5,9 @@ using Gun5.Odev5.OyunDemo.Abstract;
 
 namespace Gun5.Odev5.OyunDemo.Adapters
 {
-    class MernisServiceAdapter : IPersonCheckService
+    class MernisServiceAdapter : ICustomerCheckService
     {
-        public bool Check(Person person)
+        public bool Check(Customer person)
         {
             KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
             return client.TCKimlikNoDogrula(Convert.ToInt64(person.IdentificationNo), person.FirstName.ToUpper(), person.LastName.ToUpper(), person.BirthDate.Year);

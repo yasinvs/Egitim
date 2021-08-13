@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <None Remove="Classes\SalesManager.cs~RFcb25dc.TMP" />
+    <None Remove="Entities\Customer.cs~RF1357511.TMP" />
     <None Remove="Entities\Person.cs~RF1028c2b.TMP" />
     <None Remove="Abstract\IOrder.cs~RFd38d88.TMP" />
     <None Remove="IPersonCheckService.cs~RFb75c4e.TMP" />

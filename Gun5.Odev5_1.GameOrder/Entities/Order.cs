@@ -1,6 +1,8 @@
-﻿namespace Gun5.Odev5.OyunDemo.Entities
+﻿using Gun5.Odev5_1.GameOrder.Abstract;
+
+namespace Gun5.Odev5_1.GameOrder.Entities
 {
-    class Order
+    public class Order : IEntity
     {
         public int Id { get; set; }
         public int CategoryId { get; set; }

@@ -3,9 +3,9 @@ using Gun5.Odev5.OyunDemo.Entities;
 
 namespace Gun5.Odev5.OyunDemo.Classes
 {
-    class PersonCheckManager : IPersonCheckService
+    class CustomerCheckManager : ICustomerCheckService
     {
-        public bool Check(Person person)
+        public bool Check(Customer person)
         {
             return true;
         }

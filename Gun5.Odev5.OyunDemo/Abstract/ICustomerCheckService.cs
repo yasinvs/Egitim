@@ -2,8 +2,8 @@
 
 namespace Gun5.Odev5.OyunDemo.Abstract
 {
-    interface IPersonService
+    interface ICustomerCheckService
     {
-        void SignUp(Person person);
+        bool Check(Customer person);
     }
 }
