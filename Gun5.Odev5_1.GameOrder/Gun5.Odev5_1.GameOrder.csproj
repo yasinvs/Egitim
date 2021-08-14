@@ -7,10 +7,14 @@
 
   <ItemGroup>
     <None Remove="Abstract\ICampaign.cs~RF1b4bba6.TMP" />
+    <None Remove="Abstract\ICampaign.cs~RF3b89a55.TMP" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Adapters\" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.8.*" />
   </ItemGroup>
 
 </Project>

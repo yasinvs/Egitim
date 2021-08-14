@@ -5,9 +5,9 @@ namespace Gun5.Odev5_1.GameOrder.Abstract
 {
     public interface ICampaign
     {
-        List<Campaign> campaigns();
-        void Add(Campaign campaign);
-        void Remove(Campaign campaign);
-        void Update(Campaign campaign, Campaign newCampaign);
+        List<Campaign> ListCampaigns();
+        bool Add(List<Campaign> campaigns);
+        bool Remove(Campaign campaign);
+        bool Update(Campaign campaign, Campaign newCampaign);
     }
 }
