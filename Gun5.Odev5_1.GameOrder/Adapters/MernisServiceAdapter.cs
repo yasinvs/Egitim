@@ -11,7 +11,7 @@ namespace Gun5.Odev5_1.GameOrder.Adapters
         {
             KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap12);
 
-            return client.TCKimlikNoDogrula(Convert.ToInt32(customer.NationalityId), customer.FirstName, customer.LastName, customer.BirthDate.Year);
+            return client.TCKimlikNoDogrula(Convert.ToInt64(customer.NationalityId), customer.FirstName.ToUpper(), customer.LastName.ToUpper(), customer.BirthDate.Year);
         }
     }
 }

@@ -45,7 +45,6 @@ namespace Gun5.Odev5_1.GameOrder.Concrete
 
         public void MakeSaleNow(Customer customer, List<Order> orders, List<Campaign> campaigns)
         {
-            // DEVAMMMMMM
             foreach (var order in orders)
             {
                 if (customer.OwnOrders.Contains(order))
@@ -56,15 +55,15 @@ namespace Gun5.Odev5_1.GameOrder.Concrete
                 {
                     int money = customer.Money;
                     int productPrice = order.Price;
-                    int discountRate;
+                    int discountRate = 0;
                     int afterMoney = 0;
                     foreach (var campaign in campaigns)
                     {
                         discountRate = campaign.DiscountRate;
                         afterMoney = money - (money * discountRate / 100);
                     }
-                    Console.WriteLine("After your money is: " + afterMoney);
                     afterMoney = afterMoney - productPrice;
+                    Console.WriteLine("After your money is: " + afterMoney);
                     customer.OwnOrders.Add(order);
                 }
             }
