@@ -88,7 +88,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gun5.Odev3.AbstractClasses"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gun5.Odev4.InterfaceAbstractDemo", "Gun5.Odev4.InterfaceAbstractDemo\Gun5.Odev4.InterfaceAbstractDemo.csproj", "{C2F26713-7111-485A-983D-01E899805F00}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gun5.Odev5.GameOrder", "Gun5.Odev5_1.GameOrder\Gun5.Odev5.GameOrder.csproj", "{59DFF61D-93D7-4E35-8E41-13533DE5E627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gun5.Odev5.GameOrder", "Gun5.Odev5.GameOrder\Gun5.Odev5.GameOrder.csproj", "{59DFF61D-93D7-4E35-8E41-13533DE5E627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
