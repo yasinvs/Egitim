@@ -1,5 +1,4 @@
 ﻿using Gun5.Odev5_1.GameOrder.Abstract;
-using Gun5.Odev5_1.GameOrder.Adapters;
 using Gun5.Odev5_1.GameOrder.Concrete;
 using Gun5.Odev5_1.GameOrder.Entities;
 using System;
@@ -25,6 +24,7 @@ namespace Gun5.Odev5_1.GameOrder
             {
                 Id = 1,
                 Name = "Yaz İndirimi",
+                CouponCode = "mAIcMomPxh",
                 DiscountRate = 10
             };
 
@@ -32,6 +32,7 @@ namespace Gun5.Odev5_1.GameOrder
             {
                 Id = 2,
                 Name = "Yaz İndirimi1",
+                CouponCode = "VuKTfnMyKW",
                 DiscountRate = 10
             };
 
@@ -43,6 +44,22 @@ namespace Gun5.Odev5_1.GameOrder
                 Price = 100
             };
 
+            Order order3 = new Order()
+            {
+                Id = 1,
+                CategoryId = 1,
+                ProductName = "Call of Duty",
+                Price = 100
+            };
+
+            Order order2 = new Order()
+            {
+                Id = 1,
+                CategoryId = 1,
+                ProductName = "Need for Speed",
+                Price = 300
+            };
+
             CampaignManager campaignManager = new CampaignManager();
             campaignManager.Add(new List<Campaign> { campaign, campaign2 });
 
@@ -50,8 +67,8 @@ namespace Gun5.Odev5_1.GameOrder
             if (customerCheckService.Validation(customer) == true) 
             {
                 OrderManager orderManager = new OrderManager();
-                orderManager.Add(new List<Order> { order });
-                orderManager.MakeSaleNow(customer, orderManager.ListOrders(), campaignManager.ListCampaigns());
+                orderManager.Add(new List<Order> { order, order2, order3 });
+                orderManager.MakeSaleNow(customer, orderManager.GetListOrders(), campaignManager.GetListCampaigns());
             }
             else
             {

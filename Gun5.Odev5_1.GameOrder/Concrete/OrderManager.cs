@@ -28,7 +28,7 @@ namespace Gun5.Odev5_1.GameOrder.Concrete
             return true;
         }
 
-        public List<Order> ListOrders()
+        public List<Order> GetListOrders()
         {
             return _orders;
         }
@@ -45,24 +45,34 @@ namespace Gun5.Odev5_1.GameOrder.Concrete
 
         public void MakeSaleNow(Customer customer, List<Order> orders, List<Campaign> campaigns)
         {
+            int discountRate = 0;
+            int money = customer.Money;
+            int afterMoney = 0;
+            int afterDiscount = 0;
+
+            foreach (var campaign in campaigns)
+            {
+                discountRate += campaign.DiscountRate;
+            }
+
             foreach (var order in orders)
             {
-                if (customer.OwnOrders.Contains(order))
+                if (customer.OwnOrders.Exists(e => e.Id == order.Id))
                 {
                     Console.WriteLine(customer.FirstName + " already ordered " + order.ProductName);
                 }
                 else
                 {
-                    int money = customer.Money;
                     int productPrice = order.Price;
-                    int discountRate = 0;
-                    int afterMoney = 0;
-                    foreach (var campaign in campaigns)
+                    if (afterDiscount == 0)
                     {
-                        discountRate = campaign.DiscountRate;
-                        afterMoney = money - (money * discountRate / 100);
+                        afterDiscount = productPrice - (productPrice * discountRate / 100);
+                        afterMoney = money - afterDiscount;
                     }
-                    afterMoney = afterMoney - productPrice;
+                    else
+                    {
+                        afterMoney = afterMoney - productPrice;
+                    }
                     Console.WriteLine("After your money is: " + afterMoney);
                     customer.OwnOrders.Add(order);
                 }

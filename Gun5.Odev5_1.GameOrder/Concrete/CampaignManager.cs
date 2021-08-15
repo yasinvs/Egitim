@@ -26,7 +26,7 @@ namespace Gun5.Odev5_1.GameOrder.Concrete
             return true;
         }
 
-        public List<Campaign> ListCampaigns()
+        public List<Campaign> GetListCampaigns()
         {
             return _campaigns;
         }

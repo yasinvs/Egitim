@@ -1,7 +1,0 @@
-OK 1. Sisteme kayıt olunabileceği bir ortam simulasyonu
-OK 2. E-Devlet üzerinden kayıt kontrolünün yapılması - TcNo, Ad, Soyad, Doğum Yılı
-OK 3. Sisteme yeni kampanya girişi, silinmesi ve güncelleştirilmesi
-OK 4. Satışlarda kampanya entegrasyonu
-
-
-Final Githuba yüklemek

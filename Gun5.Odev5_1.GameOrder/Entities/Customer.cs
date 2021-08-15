@@ -16,6 +16,7 @@ namespace Gun5.Odev5_1.GameOrder.Entities
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public List<Order> OwnOrders { get; set; }
+        public List<Campaign> OwnCampaigns { get; set; }
         public int Money { get; set; }
     }
 }
